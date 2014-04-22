@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <time.h>
+
 double get_time(double C, double F, double X) {
 	double gap = X - C;
 	double gapF = gap * F;
@@ -13,6 +13,7 @@ double get_time(double C, double F, double X) {
 	total += X / speed;
 	return total;
 }
+
 int main(void) {
 	get_time(37, 7, 54500000000.0);
 	return 0;

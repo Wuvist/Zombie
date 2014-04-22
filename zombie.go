@@ -1,7 +1,5 @@
 package main
 
-import "time"
-
 func get_time(C, F, X float64) float64 {
 	gap := X - C
 	gapF := gap * F
@@ -21,10 +19,5 @@ func get_time(C, F, X float64) float64 {
 }
 
 func main() {
-	startingTime := time.Now().UTC()
-
-	get_time(37, 7, 54500000000)
-	endingTime := time.Now().UTC()
-	var duration time.Duration = endingTime.Sub(startingTime)
-	print(duration)
+	print(get_time(37, 7, 54500000000))
 }

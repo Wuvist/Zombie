@@ -1,4 +1,4 @@
-class wuvist {
+class zombie {
 	public static double get_time(double C, double F, double X) {
 		double gap = X - C;
 		double gapF = gap * F;
@@ -12,6 +12,7 @@ class wuvist {
 		total += X / speed;
 		return total;
 	}
+	
 	public static void main(String[] args) {
 		System.out.println(get_time(37, 7, 54500000000.0));
 	}
